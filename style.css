@@ -1,15 +1,23 @@
-button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  margin-top: 15px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 18px;
+.social-share {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-share p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-share a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0077b5;
+  padding: 10px 15px;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #218838;
+.social-share a:hover {
+  background-color: #005582;
 }
