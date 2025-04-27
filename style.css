@@ -37,7 +37,34 @@ p {
         font-size: 15px;
     }
 }
+/* Mobile Layout Improvements */
+@media (max-width: 768px) {
+    .packs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
 
+    .pack {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .pack img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
 /* ---- Your existing CSS starts below ---- */
 
 @media (max-width: 768px) {
