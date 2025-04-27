@@ -1,154 +1,31 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #234E38;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #e0f2f1;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    margin-bottom: 10px;
-}
-
-.hero button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.hero button:hover {
-    background-color: #45a049;
-}
-
-/* Packs Section */
-.packs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.pack {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 15px;
-    padding: 15px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.pack img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.pack button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #234E38;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.pack button:hover {
-    background-color: #1a3a2a;
-}
-
-/* How It Works */
-.how-it-works {
-    background-color: #fff3e0;
-    padding: 30px;
-    text-align: center;
-    font-size: 18px;
-}
-
-/* Animation Section */
-.animation {
-    text-align: center;
-    padding: 20px;
-}
-
-.animation img {
-    width: 80%;
-    max-width: 400px;
-}
-
-/* Footer */
-footer {
-    background-color: #234E38;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-/* Social Share */
-.social-share {
-    margin-top: 10px;
-}
-
-.social-share a {
-    margin: 0 10px;
-    color: #ffeb3b;
-    text-decoration: none;
-}
-
-.social-share a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
+/* Ensure Packs Stack on Mobile */
+@media (max-width: 768px) {
     .packs {
         flex-direction: column;
         align-items: center;
     }
 
     .pack {
-        width: 80%;
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    .hero, .how-it-works, .contact, .faqs {
+        padding: 15px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
     }
 }
