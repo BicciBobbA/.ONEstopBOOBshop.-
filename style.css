@@ -2,18 +2,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
+
 header {
-    background: #2e4d3f;
+    background-color: #2d4b3a;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
+
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 16px;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .hero {
-    background: url('images/placeholder-fist-barbedwire.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6f0ec;
+}
+
+button {
+    background-color: #4CAF50;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.packs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pack {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,
