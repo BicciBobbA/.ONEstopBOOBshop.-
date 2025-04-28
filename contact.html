@@ -19,14 +19,22 @@
 
     <section class="contact">
         <h2>We’re Here to Help</h2>
-        <p>If you have any questions about our packs, delivery process, or anything else, feel free to reach out!</p>
+        <p>Have questions? Send us a message using the form below!</p>
 
-        <h3>Contact Details:</h3>
-        <p><strong>Email:</strong> support@onestopboobshop.com</p>
-        <p><strong>Phone:</strong> 123-456-7890</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Your Name:</label><br>
+            <input type="text" name="name" required><br><br>
 
-        <h3>Contact Form (Coming Soon)</h3>
-        <p>We’re working on adding a direct contact form. In the meantime, please email or call us!</p>
+            <label for="email">Your Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p><em>We'll get back to you as soon as possible!</em></p>
     </section>
 
     <footer>
