@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inmate Order Form | The OneStopBOOBShop</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The OneStopBOOBShop | Order Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="A_logo_for_The_OneStopBOOBShop_features_two_clen.png" alt="The OneStopBOOBShop Logo" class="logo">
-    <h1>The OneStopBOOBShop</h1>
+<header>
+    <div class="logo-title">
+        <a href="index.html">
+            <img src="A_logo_for_The_OneStopBOOBShop_features_two_clen.png" alt="The OneStopBOOBShop Logo">
+            <span class="site-name">The OneStopBOOBShop</span>
+        </a>
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="shop-packs.html">Shop Packs</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="faqs.html">FAQs</a>
-      <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop-packs.html">Shop Packs</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-
-  <main>
-    <form action="thank-you.html" method="GET">
-      <h2>Enter Inmate Details</h2>
-
-      <label for="name">Prisoner's Full Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="crn">CRN (Correctional Reference Number):</label>
-      <input type="text" id="crn" name="crn" required />
-
-      <label for="facility">Correctional Facility:</label>
-      <input type="text" id="facility" name="facility" required />
-
-      <button type="submit">Submit Order</button>
+</header>
+<main>
+    <h1>Enter Inmate Details</h1>
+    <form action="thank-you.html" method="get" class="order-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="inmateName">Prisoner&rsquo;s Full Name:</label>
+                <input type="text" id="inmateName" name="inmateName" required>
+            </div>
+            <div class="form-group">
+                <label for="inmateCRN">CRN (Correctional Reference Number):</label>
+                <input type="text" id="inmateCRN" name="inmateCRN" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inmateFacility">Correctional Facility:</label>
+            <input type="text" id="inmateFacility" name="inmateFacility" required>
+        </div>
+        <button type="submit" class="btn">Submit Order</button>
     </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 The OneStopBOOBShop. All rights reserved.</p>
-  </footer>
+</main>
+<footer>
+    <p>&copy; 2025 The OneStopBOOBShop. All rights reserved.</p>
+</footer>
 </body>
 </html>
