@@ -1,4 +1,4 @@
-/* Base Styles */
+hi/* Base Styles */
 body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -241,4 +241,12 @@ button[type="submit"]:hover {
     .product-detail h2 {
         font-size: 22px;
     }
+}
+
+/* Logo Styling */
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
