@@ -39,19 +39,23 @@ nav a:hover {
   height: 50px;
 }
 
-/* Hero Section */
+/* Hero Section - Upgraded */
 .hero {
-  padding: 40px 20px;
-  background-color: #e0f2e9;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e0f2e9 0%, #c2e0d6 100%);
+  text-align: center;
+  color: #333;
 }
 
 .hero h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Soft glow */
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 /* Packs Section */
@@ -132,6 +136,7 @@ button:hover {
   padding: 20px 0;
   background-color: #f0f0f0;
   font-size: 14px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05); /* Soft footer shadow */
 }
 
 /* Mobile Responsive */
@@ -155,7 +160,7 @@ button:hover {
   }
 
   .hero h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .hero p, nav a, footer {
