@@ -20,12 +20,34 @@
   </header>
 
   <section class="hero">
-    <h2>Thank You!</h2>
+    <h2>Order Confirmed!</h2>
     <p>Your order has been received. We are preparing the clothing care pack for delivery to the correctional facility.</p>
     <p>You will receive confirmation once the order is shipped!</p>
 
     <a href="index.html"><button>Return to Home</button></a>
   </section>
+
+  <section class="order-summary">
+    <h3>Order Summary</h3>
+    <p id="order-details">Loading order details...</p>
+  </section>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const crn = urlParams.get('crn');
+    const facility = urlParams.get('facility');
+
+    if (name && crn && facility) {
+      document.getElementById('order-details').innerHTML = `
+        <strong>Prisoner's Name:</strong> ${name}<br>
+        <strong>CRN:</strong> ${crn}<br>
+        <strong>Correctional Facility:</strong> ${facility}
+      `;
+    } else {
+      document.getElementById('order-details').innerHTML = "No prisoner details provided.";
+    }
+  </script>
 
   <footer>
     <p>&copy; 2024 The OneStopBOOBShop. All rights reserved.</p>
