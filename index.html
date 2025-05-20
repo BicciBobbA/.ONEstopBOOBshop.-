@@ -2,36 +2,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OneStopBOOBshop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background: #e0f7e9;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    .button-main {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .packs-section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .packs-section h2 {
+      margin-bottom: 20px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .pack-card {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .pack-card h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+    .pack-card p {
+      margin: 5px 0;
+    }
+    .view-button {
+      background-color: #28a745;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .how-it-works {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .how-it-works h2 {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 600px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the OneStopBOOBshop</h1>
-  <p>This is where loved ones can order pre-made clothing packs for people in prison.</p>
 
-  <ul>
-    <li><strong>Essential Pack - $26.99</strong></li>
-    <li><strong>Full Pack - $75.00</strong></li>
-  </ul>
+  <header>
+    <h1>At The OneStopBOOBshop, we make it easy to send approved clothing care packs directly to correctional facilities.</h1>
+    <p>No stress, no shopping trips—just select a pack, and we'll handle the rest.</p>
+    <br>
+    <a class="button-main" href="#packs">Browse Packs</a>
+  </header>
 
-  <br><br>
-
-  <a href="order.html" style="text-decoration: none;">
-    <button style="
-      background-color: #333;
-      color: white;
-      padding: 14px 28px;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    ">
-      ORDER NOW
-    </button>
-  </a>
-
-  <br><br>
-</body>
-</html>
+  <section class="packs-section" id="packs">
+    <h2>Shop Our Packs</h2>
+    <div class="card-container">
+      <div class="pack-card">
+        <h3>Essential Pack</h3>
+        <p>$26.99</p>
+        <a href="order.html" class="view-button">View Pack</a>
+      </div>
+      <div class="pack-card">
