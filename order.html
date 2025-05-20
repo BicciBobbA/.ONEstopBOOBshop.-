@@ -9,18 +9,24 @@
 <body>
   <h1>Order a Clothing Pack</h1>
 
-  <h2>Prisoner Details</h2>
-  <form action="#" method="post">
+  <form action="https://formsubmit.co/juzzchadwick@gmail.com" method="POST">
+    <!-- Redirect to thank you page -->
+    <input type="hidden" name="_next" value="https://biccibobba.github.io/thankyou.html">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <h2>Prisoner Details</h2>
+
     <label>Prisoner Name:<br>
-      <input type="text" name="prisoner_name" required>
+      <input type="text" name="Prisoner Name" required>
     </label><br><br>
 
     <label>Prisoner ID Number:<br>
-      <input type="text" name="prisoner_id" required>
+      <input type="text" name="Prisoner ID Number" required>
     </label><br><br>
 
     <label>Correctional Facility Name:<br>
-      <input type="text" name="facility_name" required>
+      <input type="text" name="Correctional Facility" required>
     </label><br><br>
 
     <hr>
@@ -29,19 +35,19 @@
     <p style="color: red;"><strong>These details must match what the correctional facility has on file for you, including your Visitor ID Number.</strong></p>
 
     <label>Your Full Name:<br>
-      <input type="text" name="sender_name" required>
+      <input type="text" name="Your Name" required>
     </label><br><br>
 
     <label>Date of Birth:<br>
-      <input type="date" name="dob" required>
+      <input type="date" name="Date of Birth" required>
     </label><br><br>
 
-    <label>Visitor ID Number (from prison):<br>
-      <input type="text" name="visitor_id" required>
+    <label>Visitor ID Number:<br>
+      <input type="text" name="Visitor ID Number" required>
     </label><br><br>
 
     <label>Email Address:<br>
-      <input type="email" name="email" required>
+      <input type="email" name="Sender Email" required>
     </label><br><br>
 
     <button type="submit">Submit Order</button>
