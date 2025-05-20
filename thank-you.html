@@ -1,49 +1,15 @@
+<!-- thankyou.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The OneStopBOOBShop | Thank You</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Thank You</title>
 </head>
 <body>
-<header>
-    <div class="logo-title">
-        <a href="index.html">
-            <img src="A_logo_for_The_OneStopBOOBShop_features_two_clen.png" alt="The OneStopBOOBShop Logo">
-            <span class="site-name">The OneStopBOOBShop</span>
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop-packs.html">Shop Packs</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1>Order Confirmed!</h1>
-    <p>Thank you for your order. We have received your request and will deliver the selected pack to your loved one shortly.</p>
-    <h2>Prisoner Details</h2>
-    <ul>
-        <li><strong>Name:</strong> <span id="nameOutput"></span></li>
-        <li><strong>CRN:</strong> <span id="crnOutput"></span></li>
-        <li><strong>Facility:</strong> <span id="facilityOutput"></span></li>
-    </ul>
-    <p>You will receive a confirmation email with the order details. We appreciate your trust in The OneStopBOOBShop!</p>
-    <script>
-        // Script to retrieve query parameters and display prisoner details
-        const params = new URLSearchParams(window.location.search);
-        document.getElementById('nameOutput').textContent = params.get('inmateName') || '';
-        document.getElementById('crnOutput').textContent = params.get('inmateCRN') || '';
-        document.getElementById('facilityOutput').textContent = params.get('inmateFacility') || '';
-    </script>
-</main>
-<footer>
-    <p>&copy; 2025 The OneStopBOOBShop. All rights reserved.</p>
-</footer>
+  <h1>Thank You!</h1>
+  <p>Your order has been submitted successfully.</p>
+  <p>You will hear from us within 48 hours.</p>
+  <br>
+  <a href="index.html">Back to Home</a>
 </body>
 </html>
