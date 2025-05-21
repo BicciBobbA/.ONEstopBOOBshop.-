@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The OneStopBOOBShop | Premium Pack</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Premium Pack</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1 { color: #333; }
+    ul { list-style: disc; padding-left: 20px; }
+    form { margin-top: 30px; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input { width: 100%; padding: 8px; margin-top: 5px; }
+    .section-title { margin-top: 30px; font-size: 18px; text-decoration: underline; }
+  </style>
 </head>
 <body>
-<header>
-    <div class="logo-title">
-        <a href="index.html">
-            <img src="A_logo_for_The_OneStopBOOBShop_features_two_clen.png" alt="The OneStopBOOBShop Logo">
-            <span class="site-name">The OneStopBOOBShop</span>
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop-packs.html">Shop Packs</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1>Premium Pack</h1>
-    <p>The Premium Pack provides an expanded selection of apparel, offering even more clothing pieces for maximum comfort and convenience.</p>
-    <p><strong>Includes:</strong></p>
-    <ul>
-        <li>4 x Pairs of Socks</li>
-        <li>4 x Pairs of Underwear</li>
-        <li>2 x White Tees</li>
-        <li>2 x Bottle Green Tees</li>
-        <li>1 x Black Shorts</li>
-        <li>1 x Grey Sweatpants</li>
-        <li>1 x Grey Sweatshirt</li>
-    </ul>
-    <p><strong>Available Sizes:</strong> S, M, L, XL</p>
-    <p><em>Quick delivery within 3&ndash;5 business days.</em></p>
-    <p><a href="order-form.html" class="btn">Order Now</a></p>
-</main>
-<footer>
-    <p>&copy; 2025 The OneStopBOOBShop. All rights reserved.</p>
-</footer>
+  <h1>Premium Pack</h1>
+  <p><strong>Price:</strong> $54.99</p>
+  <div class="section-title">Included Items:</div>
+  <ul>
+    <li>4 Pairs of Socks</li>
+    <li>4 Pairs of Underwear</li>
+    <li>3 White T-Shirts</li>
+    <li>2 Bottle Green T-Shirts</li>
+    <li>2 Pairs of Black Shorts</li>
+    <li>1 Bottle Green Cap</li>
+  </ul>
+
+  <div class="section-title">Prisoner Details</div>
+  <form>
+    <label for="prisonerName">Prisoner Name:</label>
+    <input type="text" id="prisonerName" name="prisonerName" required>
+
+    <label for="prisonerID">Prisoner ID Number:</label>
+    <input type="text" id="prisonerID" name="prisonerID" required>
+
+    <label for="facilityName">Correctional Facility Name:</label>
+    <input type="text" id="facilityName" name="facilityName" required>
+
+    <div class="section-title">Sender / Buyer Details</div>
+
+    <label for="senderName">Your Full Name:</label>
+    <input type="text" id="senderName" name="senderName" required>
+
+    <label for="senderDOB">Your Date of Birth:</label>
+    <input type="date" id="senderDOB" name="senderDOB" required>
+
+    <label for="visitorID">Visitor ID Number:</label>
+    <input type="text" id="visitorID" name="visitorID" required>
+
+    <p style="margin-top: 10px; font-size: 14px;"><em>Note: The above details must match the correctional facility's records.</em></p>
+
+    <button type="submit" style="margin-top:20px;">Submit Order</button>
+  </form>
 </body>
 </html>
