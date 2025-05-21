@@ -1,189 +1,87 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OneStopBOOBshop</title>
+  <meta charset="UTF-8">
+  <title>ONEstopBOOBshop</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
-      color: #333;
-    }
-    header {
-      background: #e0f7e9;
-      padding: 30px 20px;
+      padding: 30px;
       text-align: center;
+      background-color: #f8f8f8;
     }
-    header h1 {
-      font-size: 1.6em;
+    h1 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 1em;
-    }
-    .button-main {
-      background-color: #28a745;
-      color: white;
-      padding: 12px 24px;
+    p {
       font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
+      margin-bottom: 30px;
+    }
+    .pack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .pack {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    .pack a {
       display: inline-block;
       margin-top: 15px;
-    }
-    .packs-section {
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .packs-section h2 {
-      margin-bottom: 20px;
-    }
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .pack-card {
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-      background-color: #fafafa;
-      text-align: left;
-    }
-    .pack-card h3 {
-      font-size: 1.2em;
-      margin-bottom: 5px;
-    }
-    .pack-card p {
-      font-weight: bold;
-      margin: 5px 0;
-    }
-    .pack-card ul {
-      padding-left: 20px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-    .view-button {
-      background-color: #28a745;
+      padding: 10px 20px;
+      background-color: black;
       color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 5px;
-      font-size: 14px;
       text-decoration: none;
-      display: inline-block;
+      border-radius: 5px;
     }
-    .how-it-works {
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .how-it-works h2 {
-      margin-bottom: 10px;
-    }
-    @media screen and (max-width: 600px) {
-      .card-container {
-        flex-direction: column;
-        align-items: center;
-      }
+    .pack a:hover {
+      background-color: #444;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>At The OneStopBOOBshop, we make it easy to send approved clothing care packs directly to correctional facilities.</h1>
-    <p>No stress, no shopping trips—just select a pack, and we'll handle the rest.</p>
-    <a class="button-main" href="#packs">Browse Packs</a>
-  </header>
+  <h1>Welcome to ONEstopBOOBshop</h1>
+  <p>Order pre-approved clothing packs for your loved ones in correctional facilities.</p>
 
-  <section class="packs-section" id="packs">
-    <h2>Shop Our Packs</h2>
-    <div class="card-container">
-
-      <div class="pack-card">
-        <h3>Essential Pack</h3>
-        <p>$26.99</p>
-        <ul>
-          <li>2x Socks</li>
-          <li>2x Underwear</li>
-          <li>1x White Tee</li>
-          <li>1x Bottle Green Tee</li>
-          <li>1x Black Shorts</li>
-        </ul>
-        <a href="order.html" class="view-button">View Pack</a>
-      </div>
-
-      <div class="pack-card">
-        <h3>Standard Pack</h3>
-        <p>$39.99</p>
-        <ul>
-          <li>3x Socks</li>
-          <li>3x Briefs</li>
-          <li>2x White Tees</li>
-          <li>2x Bottle Green Tees</li>
-          <li>2x Black Shorts</li>
-        </ul>
-        <a href="order.html" class="view-button">View Pack</a>
-      </div>
-
-      <div class="pack-card">
-        <h3>Comfort Pack</h3>
-        <p>$49.99</p>
-        <ul>
-          <li>4x Socks</li>
-          <li>4x Briefs</li>
-          <li>2x White Tees</li>
-          <li>2x Bottle Green Tees</li>
-          <li>2x Black Shorts</li>
-        </ul>
-        <a href="order.html" class="view-button">View Pack</a>
-      </div>
-
-      <div class="pack-card">
-        <h3>Premium Pack</h3>
-        <p>$65.99</p>
-        <ul>
-          <li>5x Socks</li>
-          <li>5x Briefs</li>
-          <li>3x White Tees</li>
-          <li>3x Bottle Green Tees</li>
-          <li>3x Black Shorts</li>
-        </ul>
-        <a href="order.html" class="view-button">View Pack</a>
-      </div>
-
-      <div class="pack-card">
-        <h3>Ultimate Pack</h3>
-        <p>$75.00</p>
-        <ul>
-          <li>5x Socks</li>
-          <li>5x Briefs</li>
-          <li>4x White Tees</li>
-          <li>3x Bottle Green Tees</li>
-          <li>3x Black Shorts</li>
-          <li>1x Bottle Green Cap</li>
-        </ul>
-        <a href="order.html" class="view-button">View Pack</a>
-      </div>
-
+  <div class="pack-grid">
+    <div class="pack">
+      <h2>Essential Pack</h2>
+      <p>$26.99</p>
+      <a href="essential-pack.html">Order Now</a>
     </div>
-  </section>
 
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <p>1. Choose a care pack</p>
-    <p>2. Enter the prisoner’s name, CRN number, and facility</p>
-    <p>3. We deliver directly to the correctional center</p>
-  </section>
+    <div class="pack">
+      <h2>Comfort Pack</h2>
+      <p>$39.99</p>
+      <a href="comfort-pack.html">Order Now</a>
+    </div>
+
+    <div class="pack">
+      <h2>Premium Pack</h2>
+      <p>$54.99</p>
+      <a href="premium-pack.html">Order Now</a>
+    </div>
+
+    <div class="pack">
+      <h2>Standard Pack</h2>
+      <p>$64.99</p>
+      <a href="standard-pack.html">Order Now</a>
+    </div>
+
+    <div class="pack">
+      <h2>Ultimate Pack</h2>
+      <p>$75.00</p>
+      <a href="ultimate-pack.html">Order Now</a>
+    </div>
+  </div>
 
 </body>
 </html>
