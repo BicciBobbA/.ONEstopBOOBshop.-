@@ -2,64 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Standard Pack</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Standard Pack – The OneStopBOOBShop</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <h1>The OneStopBOOBshop</h1>
-    <img src="TheOneStopBOOBShop_Logo (1).png" alt="Logo" style="max-width: 150px;" />
+    <h1>The OneStopBOOBShop</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="shop-packs.html">All Packs</a>
+      <a href="index.html">Home</a>
+      <a href="packs.html">All Packs</a>
+      <a href="order.html">Order</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Standard Pack - $64.95</h2>
+    <section class="pack-details">
+      <h2>Standard Pack – $49.99</h2>
+      <p>This pack includes:</p>
       <ul>
-        <li>4x Socks</li>
-        <li>4x Briefs</li>
-        <li>3x White Tees</li>
-        <li>2x Bottle Green Tees</li>
-        <li>2x Black Shorts</li>
+        <li>4 x Socks</li>
+        <li>4 x Underwear</li>
+        <li>3 x White Tees</li>
+        <li>2 x Bottle Green Tees</li>
+        <li>2 x Black Shorts</li>
       </ul>
-      <p><strong>Sizes Available:</strong> Small, Medium, Large, XL</p>
+      <p><strong>Available sizes:</strong> S, M, L, XL</p>
     </section>
 
-    <section>
-      <h3>Prisoner Details</h3>
-      <form action="https://formsubmit.co/juzzchadwick@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://biccibobba.github.io/thankyou.html">
-        <input type="hidden" name="_captcha" value="false">
+    <section class="shipping-note">
+      <p><strong>NOTE:</strong> This pack will be mailed to <em>you</em> (the buyer), not directly to the correctional facility. This is because The OneStopBOOBShop is still finalizing arrangements with facilities. In the future, we aim to offer direct delivery to prisoners.</p>
+    </section>
 
-        <label>Prisoner Name:<br>
-          <input type="text" name="Prisoner Name" required>
-        </label><br><br>
+    <section class="order-form">
+      <h3>Order Now</h3>
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Prisoner Details</legend>
+          <label>Full Name: <input type="text" name="prisoner_name" required></label>
+          <label>Correctional Facility: <input type="text" name="facility" required></label>
+          <label>Prisoner ID/CRN: <input type="text" name="prisoner_id" required></label>
+          <label>Size Required: 
+            <select name="size" required>
+              <option value="">Select</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+        </fieldset>
 
-        <label>Prisoner ID Number:<br>
-          <input type="text" name="Prisoner ID Number" required>
-        </label><br><br>
+        <fieldset>
+          <legend>Your (Buyer) Details</legend>
+          <label>Your Full Name: <input type="text" name="buyer_name" required></label>
+          <label>Date of Birth: <input type="date" name="buyer_dob" required></label>
+          <label>Visitor ID Number: <input type="text" name="visitor_id" required></label>
+          <label>Shipping Address: <input type="text" name="buyer_address" required></label>
+        </fieldset>
 
-        <label>Correctional Facility Name:<br>
-          <input type="text" name="Correctional Facility" required>
-        </label><br><br>
+        <p><small><strong>Reminder:</strong> Your name, date of birth and visitor ID must match correctional facility records.</small></p>
 
-        <h3>Your Details (Buyer / Sender)</h3>
-        <p style="color: red;"><strong>These details must match what the correctional facility has on file for you.</strong></p>
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
 
-        <label>Your Full Name:<br>
-          <input type="text" name="Your Name" required>
-        </label><br><br>
-
-        <label>Date of Birth:<br>
-          <input type="date" name="Date of Birth" required>
-        </label><br><br>
-
-        <label>Visitor ID Number:<br>
-          <input type="text" name="Visitor ID Number" required>
-        </label><br><br>
-
-        <label>Email Address:<
+  <footer>
+    <p>&copy; 2025 The OneStopBOOBShop</p>
+  </footer>
+</body>
+</html>
