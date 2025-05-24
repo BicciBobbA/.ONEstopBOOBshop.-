@@ -21,7 +21,7 @@ header h1 {
 }
 
 header img {
-  height: 50px;
+  height: 100px; /* Increased logo size */
 }
 
 nav {
