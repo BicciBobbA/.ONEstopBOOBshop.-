@@ -13,17 +13,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 header h1 {
   margin: 0;
   font-size: 1.5rem;
+  flex: 1;
 }
 
 header img {
-  height: 100px !important;
-  max-height: 100px;
+  height: auto;
+  max-height: 120px;
   width: auto;
+  object-fit: contain;
 }
 
 nav {
