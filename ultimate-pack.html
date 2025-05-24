@@ -37,14 +37,15 @@
 
     <section class="order-form">
       <h3>Order Now</h3>
-      <form action="thankyou.html" method="get">
+      <form action="https://formsubmit.co/juzzchadwick@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
         <fieldset>
           <legend>Prisoner Details</legend>
-          <label>Full Name: <input type="text" name="prisoner_name" required></label>
-          <label>Correctional Facility: <input type="text" name="facility" required></label>
-          <label>Prisoner ID/CRN: <input type="text" name="prisoner_id" required></label>
+          <label>Full Name: <input type="text" name="Prisoner_Name" required></label>
+          <label>Correctional Facility: <input type="text" name="Correctional_Facility" required></label>
+          <label>Prisoner ID/CRN: <input type="text" name="Prisoner_ID_Number" required></label>
           <label>Size Required: 
-            <select name="size" required>
+            <select name="Size" required>
               <option value="">Select</option>
               <option>S</option>
               <option>M</option>
@@ -56,10 +57,11 @@
 
         <fieldset>
           <legend>Your (Buyer) Details</legend>
-          <label>Your Full Name: <input type="text" name="buyer_name" required></label>
-          <label>Date of Birth: <input type="date" name="buyer_dob" required></label>
-          <label>Visitor ID Number: <input type="text" name="visitor_id" required></label>
-          <label>Shipping Address: <input type="text" name="buyer_address" required></label>
+          <label>Your Full Name: <input type="text" name="Your_Name" required></label>
+          <label>Date of Birth: <input type="date" name="Date_of_Birth" required></label>
+          <label>Visitor ID Number: <input type="text" name="Visitor_ID_Number" required></label>
+          <label>Email Address: <input type="email" name="Sender_Email" required></label>
+          <label>Shipping Address: <input type="text" name="Shipping_Address" required></label>
         </fieldset>
 
         <p><small><strong>Reminder:</strong> Your name, date of birth and visitor ID must match correctional facility records.</small></p>
