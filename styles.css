@@ -115,4 +115,44 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.pack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.pack-button {
+  display: block;
+  padding: 1.5rem;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.pack-button:hover {
+  background-color: #1558c0;
+  transform: scale(1.05);
+}
+
+.note-text {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
